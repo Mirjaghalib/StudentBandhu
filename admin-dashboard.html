@@ -1,0 +1,11 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin dashboard | studentबंधु</title><link rel="stylesheet" href="admin.css"></head><body data-page="admin"><aside><b>e studentबंधु</b><small>ADMIN WORKSPACE</small><nav>Overview<br>Students<br>AI insights<br>Settings</nav><a href="/">← Public site</a></aside><main id="admin-main"><header><div><small>INSTITUTION OVERVIEW</small><h1>See where learning<br><i>is moving.</i></h1><p>Real, live numbers computed from every registered student — nothing on this page is a sample.</p></div><div><button id="export">Export report</button><button id="invite">Invite students →</button></div></header>
+
+<section class="kpis"><article>ACTIVE LEARNERS <small class="hint">(last 30 days)</small><b id="kpi-active">—</b><em id="kpi-active-note">Loading…</em></article><article>AVERAGE CONFIDENCE<b id="kpi-confidence">—</b><em id="kpi-confidence-note">Across students who've started</em></article><article>CONCEPTS MASTERED<b id="kpi-concepts">—</b><em>Across all learners</em></article><article>AT-RISK CONCEPTS<b id="kpi-atrisk">—</b><em>Below 50% accuracy, 3+ attempts</em></article></section>
+
+<section class="grid"><article class="panel weak-panel"><small>WEAKEST CONCEPTS</small><h2>Where accuracy is lowest right now</h2><div id="weak-concepts-list" class="bar-list"><p class="empty-note">Not enough answered questions yet to identify weak concepts.</p></div></article><article class="panel priorities"><small>AI PRIORITIES</small><h2>Where support has the biggest effect.</h2><ol id="priorities-list"><li><span>Waiting on enough student activity to generate real priorities.</span></li></ol><button id="recommend">Refresh AI recommendations →</button></article></section>
+
+<section class="panel"><small>COHORTS</small><h2>Learning needs, at a glance</h2><table><thead><tr><th>COHORT</th><th>LEARNERS</th><th>CONFIDENCE</th><th>STATUS</th></tr></thead><tbody id="cohorts-body"><tr><td colspan="4" class="empty-note">No students registered yet.</td></tr></tbody></table></section>
+</main>
+<div id="toast"></div>
+<script src="app.js"></script>
+</body></html>

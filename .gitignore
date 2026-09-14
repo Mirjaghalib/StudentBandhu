@@ -1,0 +1,11 @@
+.env
+.env.*
+!.env.example
+node_modules/
+data/users.json
+step*_*.js
+step*_*.txt
+e2e_pid.txt
+app js t01.js
+studentbandhu-fullstack-v2 t01.zip
+
